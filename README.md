@@ -1,4 +1,4 @@
-# FIM-Tool – File Integrity Monitoring (Enhanced)
+# FIM-Tool – File Integrity Monitoring  
 
 [![Python 3](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -6,7 +6,7 @@
 [![Stars](https://img.shields.io/github/stars/fadilahmad47/FIM-Tool?style=social)](https://github.com/fadilahmad47/FIM-Tool/stargazers)
 [![Forks](https://img.shields.io/github/forks/fadilahmad47/FIM-Tool?style=social)](https://github.com/fadilahmad47/FIM-Tool/network/members)
 
-A fast, lightweight **File Integrity Monitoring (FIM)** tool built for **SOC L1 analysts, sysadmins, and blue-team beginners**.
+A fast, lightweight **File Integrity Monitoring (FIM)** tool  
 
 ###  Features
 - Multi-hash support: `md5` | `sha256` | `sha512` (default: `md5`)
