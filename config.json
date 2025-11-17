@@ -1,0 +1,4 @@
+{
+  "blacklist": ["/tmp", "/var/log/journal", "/home/kali/Downloads"],
+  "whitelist": ["/etc/passwd", "/etc/ssh/sshd_config", "/var/www"]
+}
