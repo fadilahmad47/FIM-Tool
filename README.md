@@ -39,6 +39,12 @@ json{
   "whitelist": ["/etc/passwd", "/etc/ssh/sshd_config", "/var/www"]
 }
 ```
+### Customization Options
+Edit `file_integrity_checker.py` or config for your needs:
+- **Memory Threshold**: Set `MEMORY_THRESHOLD_MB = 200` (default: 500) for larger scans.
+- **Hash Algo**: Use `--hash-algo sha512` for stronger security (fallback to MD5 on errors).
+- **Config Paths**: Add your own in `config.example.json` (e.g., blacklist `/proc` for noise reduction).  
+
 ### Run with config:
 ```
 bash
@@ -54,6 +60,12 @@ Mismatches found (1):
 - test/bad.txt
 ```
 
+**Pro Tips & Precautions**:
+- Run as non-root user to avoid risks.
+- Backup data before scanning production dirs.
+- Avoid critical paths like `/bin`, `/etc`, `/lib` unless testing.
+- Update hashes regularly—static DBs miss new threats.  
+
 ###  :file_folder: File Structure
 ```
 FIM-Tool/
@@ -65,6 +77,8 @@ FIM-Tool/
 ├── .gitignore
 └── README.md                    ← You are here
 ```
+## Contributing
+Fork, PR, or issues welcome!  
 
 ## Author
 **Fadil Ahmad**  
